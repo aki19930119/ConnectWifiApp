@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6117A19624D538600007D329 /* ConnectWifoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectWifoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6117A19624D538600007D329 /* ConnectWifiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectWifiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6117A19924D538600007D329 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6117A19B24D538600007D329 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6117A19E24D538600007D329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,20 +38,21 @@
 		6117A18D24D538600007D329 = {
 			isa = PBXGroup;
 			children = (
-				6117A19824D538600007D329 /* ConnectWifoApp */,
+				6117A19824D538600007D329 /* ConnectWifiApp */,
 				6117A19724D538600007D329 /* Products */,
+				6120D2EB24DA992C00521E45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		6117A19724D538600007D329 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6117A19624D538600007D329 /* ConnectWifoApp.app */,
+				6117A19624D538600007D329 /* ConnectWifiApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6117A19824D538600007D329 /* ConnectWifoApp */ = {
+		6117A19824D538600007D329 /* ConnectWifiApp */ = {
 			isa = PBXGroup;
 			children = (
 				6117A19924D538600007D329 /* AppDelegate.swift */,
@@ -61,15 +62,22 @@
 				6117A1A224D538610007D329 /* LaunchScreen.storyboard */,
 				6117A1A524D538610007D329 /* Info.plist */,
 			);
-			path = ConnectWifoApp;
+			path = ConnectWifiApp;
+			sourceTree = "<group>";
+		};
+		6120D2EB24DA992C00521E45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6117A19524D538600007D329 /* ConnectWifoApp */ = {
+		6117A19524D538600007D329 /* ConnectWifiApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6117A1A824D538610007D329 /* Build configuration list for PBXNativeTarget "ConnectWifoApp" */;
+			buildConfigurationList = 6117A1A824D538610007D329 /* Build configuration list for PBXNativeTarget "ConnectWifiApp" */;
 			buildPhases = (
 				6117A19224D538600007D329 /* Sources */,
 				6117A19324D538600007D329 /* Frameworks */,
@@ -79,9 +87,9 @@
 			);
 			dependencies = (
 			);
-			name = ConnectWifoApp;
+			name = ConnectWifiApp;
 			productName = ConnectWifoApp;
-			productReference = 6117A19624D538600007D329 /* ConnectWifoApp.app */;
+			productReference = 6117A19624D538600007D329 /* ConnectWifiApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -96,11 +104,19 @@
 				TargetAttributes = {
 					6117A19524D538600007D329 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
-			buildConfigurationList = 6117A19124D538600007D329 /* Build configuration list for PBXProject "ConnectWifoApp" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 6117A19124D538600007D329 /* Build configuration list for PBXProject "ConnectWifiApp" */;
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -112,7 +128,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6117A19524D538600007D329 /* ConnectWifoApp */,
+				6117A19524D538600007D329 /* ConnectWifiApp */,
 			);
 		};
 /* End PBXProject section */
@@ -284,15 +300,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 986MT8CMMX;
-				INFOPLIST_FILE = ConnectWifoApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ConnectWifiApp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.akiblog.ConnectWifoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.akiblog.ConnectWifiApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,22 +319,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 986MT8CMMX;
-				INFOPLIST_FILE = ConnectWifoApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ConnectWifiApp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.akiblog.ConnectWifoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.akiblog.ConnectWifiApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6117A19124D538600007D329 /* Build configuration list for PBXProject "ConnectWifoApp" */ = {
+		6117A19124D538600007D329 /* Build configuration list for PBXProject "ConnectWifiApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6117A1A624D538610007D329 /* Debug */,
@@ -326,7 +344,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6117A1A824D538610007D329 /* Build configuration list for PBXNativeTarget "ConnectWifoApp" */ = {
+		6117A1A824D538610007D329 /* Build configuration list for PBXNativeTarget "ConnectWifiApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6117A1A924D538610007D329 /* Debug */,
